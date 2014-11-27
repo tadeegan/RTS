@@ -7,7 +7,7 @@
 ARTSGameMode::ARTSGameMode(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
-
+	
 }
 
 
