@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6395010B83F189E14504CF28 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6028181650C886C91A9FBED0 /* UE4CmdLineRun.m */; };
+		59952E5C4D77A32301346879 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B94DB3A25CD17AF074EA793 /* UE4CmdLineRun.m */; };
 		EB41FF261F9FC8B1D0C3E278 /* RTS.uproject in Sources */ = {isa = PBXBuildFile; fileRef = 15A34CDBDF6AF17442A5BC38 /* RTS.uproject */; };
 		0A3DDCAAADBB1E0F483C7C1C /* RTS.Target.cs in Sources */ = {isa = PBXBuildFile; fileRef = B64C3FA889BE2718F09D3BB4 /* RTS.Target.cs */; };
 		1603690C9E11E4DCF8C3AA03 /* RTSEditor.Target.cs in Sources */ = {isa = PBXBuildFile; fileRef = E87B71283A2450FDB3AFA02A /* RTSEditor.Target.cs */; };
@@ -18,16 +18,18 @@
 		B48368436A2746BB0D9E6995 /* RTS.h in Sources */ = {isa = PBXBuildFile; fileRef = E97872DDC3C98FCF8D6C94BD /* RTS.h */; };
 		F8EE3A7C52D9DFE2A62935E1 /* RTSGameMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F1C8B2C8EC6F456C28CBD39 /* RTSGameMode.cpp */; };
 		6794620630FEBAD2DC3F0D88 /* RTSGameMode.h in Sources */ = {isa = PBXBuildFile; fileRef = 172A2FE00FA3A092B5E62089 /* RTSGameMode.h */; };
-		62FB6C873C96032511FA6EC9 /* RTSPlayerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B4B2C61992407D66A50C05 /* RTSPlayerController.cpp */; };
-		63F8E93B4F26364282679766 /* RTSPlayerController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3B062016257A479AC48AD30A /* RTSPlayerController.h */; };
-		3FA8A87A97F953207905EFD6 /* RTS.ico in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC04FBD5F38228F027F30F /* RTS.ico */; };
-		5398D4EC0E13B1437FE44C78 /* RTS.rc in Sources */ = {isa = PBXBuildFile; fileRef = CB393D8791A3E41315F82216 /* RTS.rc */; };
+		62FB6C873C96032511FA6EC9 /* RTSPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B4B2C61992407D66A50C05 /* RTSPlayer.cpp */; };
+		63F8E93B4F26364282679766 /* RTSPlayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 3B062016257A479AC48AD30A /* RTSPlayer.h */; };
+		3FA8A87A97F953207905EFD6 /* RTSPlayerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC04FBD5F38228F027F30F /* RTSPlayerController.cpp */; };
+		5398D4EC0E13B1437FE44C78 /* RTSPlayerController.h in Sources */ = {isa = PBXBuildFile; fileRef = CB393D8791A3E41315F82216 /* RTSPlayerController.h */; };
+		27AFC5D77CBF58FB29C42D1E /* RTS.ico in Sources */ = {isa = PBXBuildFile; fileRef = 2D19E2F2734BF246E70BD9BE /* RTS.ico */; };
+		CCD36219AB34B6576F0FBEF0 /* RTS.rc in Sources */ = {isa = PBXBuildFile; fileRef = E597618D700086845231AED2 /* RTS.rc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29A0CBF10248C211A6964760 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		6028181650C886C91A9FBED0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9F2433E3DDF5735319F1FD5F /* libUE4XcodeHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUE4XcodeHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2DC354EDE9DF816C3EB183 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3B94DB3A25CD17AF074EA793 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3B66A14872D7F21020815DDD /* libUE4XcodeHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUE4XcodeHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A34CDBDF6AF17442A5BC38 /* RTS.uproject */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.uproject"; path = "RTS.uproject"; sourceTree = SOURCE_ROOT; };
 		B64C3FA889BE2718F09D3BB4 /* RTS.Target.cs */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.Target.cs"; path = "Source/RTS.Target.cs"; sourceTree = SOURCE_ROOT; };
 		E87B71283A2450FDB3AFA02A /* RTSEditor.Target.cs */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTSEditor.Target.cs"; path = "Source/RTSEditor.Target.cs"; sourceTree = SOURCE_ROOT; };
@@ -38,67 +40,69 @@
 		E97872DDC3C98FCF8D6C94BD /* RTS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RTS.h"; path = "Source/RTS/RTS.h"; sourceTree = SOURCE_ROOT; };
 		0F1C8B2C8EC6F456C28CBD39 /* RTSGameMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "RTSGameMode.cpp"; path = "Source/RTS/RTSGameMode.cpp"; sourceTree = SOURCE_ROOT; };
 		172A2FE00FA3A092B5E62089 /* RTSGameMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RTSGameMode.h"; path = "Source/RTS/RTSGameMode.h"; sourceTree = SOURCE_ROOT; };
-		C2B4B2C61992407D66A50C05 /* RTSPlayerController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "RTSPlayerController.cpp"; path = "Source/RTS/RTSPlayerController.cpp"; sourceTree = SOURCE_ROOT; };
-		3B062016257A479AC48AD30A /* RTSPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RTSPlayerController.h"; path = "Source/RTS/RTSPlayerController.h"; sourceTree = SOURCE_ROOT; };
-		5AFC04FBD5F38228F027F30F /* RTS.ico */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.ico"; path = "Source/RTS/Resources/Windows/RTS.ico"; sourceTree = SOURCE_ROOT; };
-		CB393D8791A3E41315F82216 /* RTS.rc */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.rc"; path = "Source/RTS/Resources/Windows/RTS.rc"; sourceTree = SOURCE_ROOT; };
-		D1C6A0CFDB0094D8E35C577D /* UE4CmdLineRun.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Engine/Binaries/IOS/Payload/UE4CmdLineRun.xctest; sourceTree = "<group>"; };
-		52225273DFF1A3D468C1577A /* RTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTS/Binaries/IOS/Payload/RTS.app; sourceTree = "<group>"; };
-		A642C9A4EACF852E707BE498 /* RTS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RTS-Info.plist"; path = RTS/Build/IOS/RTS-Info.plist; sourceTree = "<group>"; };
+		C2B4B2C61992407D66A50C05 /* RTSPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "RTSPlayer.cpp"; path = "Source/RTS/RTSPlayer.cpp"; sourceTree = SOURCE_ROOT; };
+		3B062016257A479AC48AD30A /* RTSPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RTSPlayer.h"; path = "Source/RTS/RTSPlayer.h"; sourceTree = SOURCE_ROOT; };
+		5AFC04FBD5F38228F027F30F /* RTSPlayerController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "RTSPlayerController.cpp"; path = "Source/RTS/RTSPlayerController.cpp"; sourceTree = SOURCE_ROOT; };
+		CB393D8791A3E41315F82216 /* RTSPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RTSPlayerController.h"; path = "Source/RTS/RTSPlayerController.h"; sourceTree = SOURCE_ROOT; };
+		2D19E2F2734BF246E70BD9BE /* RTS.ico */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.ico"; path = "Source/RTS/Resources/Windows/RTS.ico"; sourceTree = SOURCE_ROOT; };
+		E597618D700086845231AED2 /* RTS.rc */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = "RTS.rc"; path = "Source/RTS/Resources/Windows/RTS.rc"; sourceTree = SOURCE_ROOT; };
+		B9DA2287E06D554F82C141CF /* UE4CmdLineRun.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Engine/Binaries/IOS/Payload/UE4CmdLineRun.xctest; sourceTree = "<group>"; };
+		2543E95ABE6FE1549428744A /* RTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTS/Binaries/IOS/Payload/RTS.app; sourceTree = "<group>"; };
+		2A38DBB491B423AF6F5B2EC3 /* RTS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RTS-Info.plist"; path = RTS/Build/IOS/RTS-Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXContainerItemProxy section */
-		8EDC84F240C130AC4F53FC41 /* PBXContainerItemProxy */ = {
+		B6E3B10D4331CA89EC7F74CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27AFC5D77CBF58FB29C42D1E /* Project object */;
+			containerPortal = D711B1FC4DEE60CF3FB6188C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6857F8EAE30E1EA7348C407F;
+			remoteGlobalIDString = 6C5905C5B1D5F1E6EBB9395F;
 			remoteInfo = "RTS - Mac";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
-		3397B24CD189DA9D64548528 /* PBXTargetDependency */ = {
+		3FB149C375D527F5CCC206D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6857F8EAE30E1EA7348C407F /* RTS - Mac */;
-			targetProxy = 8EDC84F240C130AC4F53FC41 /* PBXContainerItemProxy */;
+			target = 6C5905C5B1D5F1E6EBB9395F /* RTS - Mac */;
+			targetProxy = B6E3B10D4331CA89EC7F74CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXGroup section */
-		8ECEEA9EC2004E8ED775D5ED = {
+		62147C9A139B0CC310311762 = {
 			isa = PBXGroup;
 			children = (
-				B2D9AA3E670D813F94CCA209 /* Source */,
-				C39DBEF837505267F32005E7 /* Products */,
-				EFA2C2182C067BCABEB8875F /* Frameworks */,
+				8ECEEA9EC2004E8ED775D5ED /* Source */,
+				4D492ACE78BDC7E1AE5D618A /* Products */,
+				EE3EEA590C6ADA2C929100CA /* Frameworks */,
 				15A34CDBDF6AF17442A5BC38 /* RTS.uproject */,
 			);
 			sourceTree = "<group>";
 		};
-		C39DBEF837505267F32005E7 = {
+		4D492ACE78BDC7E1AE5D618A = {
 			isa = PBXGroup;
 			children = (
-				9F2433E3DDF5735319F1FD5F /* libUE4XcodeHelper.a */,
-				D1C6A0CFDB0094D8E35C577D /* UE4CmdLineRun.xctest */,
-				52225273DFF1A3D468C1577A /* RTS.app */,
+				3B66A14872D7F21020815DDD /* libUE4XcodeHelper.a */,
+				B9DA2287E06D554F82C141CF /* UE4CmdLineRun.xctest */,
+				2543E95ABE6FE1549428744A /* RTS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFA2C2182C067BCABEB8875F = {
+		EE3EEA590C6ADA2C929100CA = {
 			isa = PBXGroup;
 			children = (
-				29A0CBF10248C211A6964760 /* OpenGLES.framework */,
-				6028181650C886C91A9FBED0 /* XCTest.framework */,
+				5C2DC354EDE9DF816C3EB183 /* OpenGLES.framework */,
+				3B94DB3A25CD17AF074EA793 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B2D9AA3E670D813F94CCA209 = {
+		8ECEEA9EC2004E8ED775D5ED = {
 			isa = PBXGroup;
 			children = (
-				A7A660A86F7E71ADB7EF07CA /* RTS */,
+				C39DBEF837505267F32005E7 /* RTS */,
 				B64C3FA889BE2718F09D3BB4 /* RTS.Target.cs */,
 				E87B71283A2450FDB3AFA02A /* RTSEditor.Target.cs */,
 			);
@@ -106,10 +110,10 @@
 			path = "Source";
 			sourceTree = "<group>";
 		};
-		A7A660A86F7E71ADB7EF07CA = {
+		C39DBEF837505267F32005E7 = {
 			isa = PBXGroup;
 			children = (
-				59952E5C4D77A32301346879 /* Resources */,
+				EFA2C2182C067BCABEB8875F /* Resources */,
 				D2A29D200257CBB89990085E /* Building.cpp */,
 				3F423ED8C0523730E2E120DB /* Building.h */,
 				6B10EF6C58AD72A2BFBC0026 /* RTS.Build.cs */,
@@ -117,27 +121,29 @@
 				E97872DDC3C98FCF8D6C94BD /* RTS.h */,
 				0F1C8B2C8EC6F456C28CBD39 /* RTSGameMode.cpp */,
 				172A2FE00FA3A092B5E62089 /* RTSGameMode.h */,
-				C2B4B2C61992407D66A50C05 /* RTSPlayerController.cpp */,
-				3B062016257A479AC48AD30A /* RTSPlayerController.h */,
+				C2B4B2C61992407D66A50C05 /* RTSPlayer.cpp */,
+				3B062016257A479AC48AD30A /* RTSPlayer.h */,
+				5AFC04FBD5F38228F027F30F /* RTSPlayerController.cpp */,
+				CB393D8791A3E41315F82216 /* RTSPlayerController.h */,
 			);
 			name = "RTS";
 			path = "Source/RTS";
 			sourceTree = "<group>";
 		};
-		59952E5C4D77A32301346879 = {
+		EFA2C2182C067BCABEB8875F = {
 			isa = PBXGroup;
 			children = (
-				49E3819C9451B63FB240A287 /* Windows */,
+				B3056409FD1826E2EF6196AD /* Windows */,
 			);
 			name = "Resources";
 			path = "Source/RTS/Resources";
 			sourceTree = "<group>";
 		};
-		49E3819C9451B63FB240A287 = {
+		B3056409FD1826E2EF6196AD = {
 			isa = PBXGroup;
 			children = (
-				5AFC04FBD5F38228F027F30F /* RTS.ico */,
-				CB393D8791A3E41315F82216 /* RTS.rc */,
+				2D19E2F2734BF246E70BD9BE /* RTS.ico */,
+				E597618D700086845231AED2 /* RTS.rc */,
 			);
 			name = "Windows";
 			path = "Source/RTS/Resources/Windows";
@@ -146,7 +152,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B5F64B35230992EDF2421C69 /* ShellScript */ = {
+		2165E139F0A34D8E3CE54651 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,7 +161,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ $DEPLOYMENT_LOCATION = \"YES\" ]\nthen\ncp -R Engine/Binaries/IOS/Payload/libUE4XcodeHelper.a/ $DSTROOT/$LOCAL_APPS_DIR/libUE4XcodeHelper.a\nfi";
 		};
-		B055C80CF81A0379101047B9 /* ShellScript */ = {
+		85596FB6CE91F8C3DCE657E0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,7 +170,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ $DEPLOYMENT_LOCATION = \"YES\" ]\nthen\ncp -R Engine/Binaries/IOS/Payload/UE4CmdLineRun.xctest/ $DSTROOT/$LOCAL_APPS_DIR/UE4CmdLineRun.xctest\nfi";
 		};
-		813DBB2C8FA8488CB2A0850E /* ShellScript */ = {
+		A4D012BA00E942CE3E13ED28 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,58 +182,59 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		96CE19817589E2ADB05AEA5C /* Sources */ = {
+		9F2433E3DDF5735319F1FD5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEEA0ACBF22F717F5CD7FC7F /* Sources */ = {
+		D1C6A0CFDB0094D8E35C577D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D9D0723294109053C165D6 /* UE4CmdLineRun.m in Sources */,
+				B2D9AA3E670D813F94CCA209 /* UE4CmdLineRun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6E3B10D4331CA89EC7F74CF /* Sources */ = {
+		52225273DFF1A3D468C1577A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96CE19817589E2ADB05AEA5C /* Sources */ = {
+		9F2433E3DDF5735319F1FD5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				54ED0A3606AA532E4419FFAA /* Building.cpp in Sources */,
 				9DB3C79F76F994FE0A529084 /* RTS.cpp in Sources */,
 				F8EE3A7C52D9DFE2A62935E1 /* RTSGameMode.cpp in Sources */,
-				62FB6C873C96032511FA6EC9 /* RTSPlayerController.cpp in Sources */,
+				62FB6C873C96032511FA6EC9 /* RTSPlayer.cpp in Sources */,
+				3FA8A87A97F953207905EFD6 /* RTSPlayerController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E21DA3825FF65243B4288416 /* Frameworks */ = {
+		CD2B4BAAD044778F03B18500 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A273BE58904752506AD7474 /* Frameworks */ = {
+		6029578830DA638243DE8E0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6395010B83F189E14504CF28 /* XCTest.framework in Frameworks */,
+				59952E5C4D77A32301346879 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3F7EB5710545DE17AF0B5C9 /* Frameworks */ = {
+		8205A358E2152CFE8E29FF95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,10 +244,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
-		6857F8EAE30E1EA7348C407F /* RTS - Mac */ = {
+		6C5905C5B1D5F1E6EBB9395F /* RTS - Mac */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) RTS $(PLATFORM_NAME) $(CONFIGURATION) \"$(PROJECT_DIR)/RTS.uproject\"";
-			buildConfigurationList = 0C2D366B707949B120CA6EBD /* Build configuration list for PBXLegacyTarget "RTS - Mac" */;
+			buildConfigurationList = D38ACCF96672675D26E8C3DD /* Build configuration list for PBXLegacyTarget "RTS - Mac" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/Shared/UnrealEngine/4.5/Engine/Build/BatchFiles/Mac/RocketBuild.sh";
@@ -251,10 +258,10 @@
 			passBuildSettingsInEnvironment = 0;
 			productName = "RTS - Mac";
 		};
-		C9593CE068915DC38157E739 /* RTSEditor - Mac */ = {
+		29FC17BCBC00AB4007D219E1 /* RTSEditor - Mac */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) RTSEditor $(PLATFORM_NAME) $(CONFIGURATION) \"$(PROJECT_DIR)/RTS.uproject\"";
-			buildConfigurationList = 43FF059A291EA3F7D26D7626 /* Build configuration list for PBXLegacyTarget "RTSEditor - Mac" */;
+			buildConfigurationList = 6625E8CDC53215948FA96C65 /* Build configuration list for PBXLegacyTarget "RTSEditor - Mac" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/Shared/UnrealEngine/4.5/Engine/Build/BatchFiles/Mac/RocketBuild.sh";
@@ -268,84 +275,84 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		F065836E73C8A2F3415E76E1 /* UE4XcodeHelper */ = {
+		E21DA3825FF65243B4288416 /* UE4XcodeHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C80F057548241D7663CECC5 /* Build configuration list for PBXNativeTarget "UE4XcodeHelper" */;
+			buildConfigurationList = B5F64B35230992EDF2421C69 /* Build configuration list for PBXNativeTarget "UE4XcodeHelper" */;
 			buildPhases = (
-				96CE19817589E2ADB05AEA5C /* Sources */,
-				E21DA3825FF65243B4288416 /* Frameworks */,
-				B5F64B35230992EDF2421C69 /* ShellScript */,
+				9F2433E3DDF5735319F1FD5F /* Sources */,
+				CD2B4BAAD044778F03B18500 /* Frameworks */,
+				2165E139F0A34D8E3CE54651 /* ShellScript */,
 			);
 			dependencies = (
 			);
 			name = "UE4XcodeHelper";
 			productName = "UE4XcodeHelper";
-			productReference = 9F2433E3DDF5735319F1FD5F /* libUE4XcodeHelper.a */;
+			productReference = 3B66A14872D7F21020815DDD /* libUE4XcodeHelper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A5628470F317DFBC0AC94CF2 /* UE4CmdLineRun */ = {
+		5A273BE58904752506AD7474 /* UE4CmdLineRun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71691D23B02BEEDBB5650509 /* Build configuration list for PBXNativeTarget "UE4CmdLineRun" */;
+			buildConfigurationList = B055C80CF81A0379101047B9 /* Build configuration list for PBXNativeTarget "UE4CmdLineRun" */;
 			buildPhases = (
-				FEEA0ACBF22F717F5CD7FC7F /* Sources */,
-				5A273BE58904752506AD7474 /* Frameworks */,
-				B055C80CF81A0379101047B9 /* ShellScript */,
+				D1C6A0CFDB0094D8E35C577D /* Sources */,
+				6029578830DA638243DE8E0B /* Frameworks */,
+				85596FB6CE91F8C3DCE657E0 /* ShellScript */,
 			);
 			dependencies = (
 			);
 			name = "UE4CmdLineRun";
 			productName = "UE4CmdLineRun";
-			productReference = D1C6A0CFDB0094D8E35C577D /* UE4CmdLineRun.xctest */;
+			productReference = B9DA2287E06D554F82C141CF /* UE4CmdLineRun.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6B676F2A98C0EE04EF057E70 /* RTS - iOS */ = {
+		D3F7EB5710545DE17AF0B5C9 /* RTS - iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 827F628BDE26193DCAF04501 /* Build configuration list for PBXNativeTarget "RTS - iOS" */;
+			buildConfigurationList = 813DBB2C8FA8488CB2A0850E /* Build configuration list for PBXNativeTarget "RTS - iOS" */;
 			buildPhases = (
-				B6E3B10D4331CA89EC7F74CF /* Sources */,
-				D3F7EB5710545DE17AF0B5C9 /* Frameworks */,
-				813DBB2C8FA8488CB2A0850E /* ShellScript */,
+				52225273DFF1A3D468C1577A /* Sources */,
+				8205A358E2152CFE8E29FF95 /* Frameworks */,
+				A4D012BA00E942CE3E13ED28 /* ShellScript */,
 			);
 			dependencies = (
-				3397B24CD189DA9D64548528 /* PBXTargetDependency */
+				3FB149C375D527F5CCC206D0 /* PBXTargetDependency */
 			);
 			name = "RTS - iOS";
 			productName = "RTS - iOS";
-			productReference = 52225273DFF1A3D468C1577A /* RTS.app */;
+			productReference = 2543E95ABE6FE1549428744A /* RTS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		27AFC5D77CBF58FB29C42D1E /* Project object */ = {
+		D711B1FC4DEE60CF3FB6188C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = EpicGames;
 			};
-			buildConfigurationList = 2D19E2F2734BF246E70BD9BE /* Build configuration list for PBXProject "UE4" */;
+			buildConfigurationList = D9C0999C542D97A8C7B043A0 /* Build configuration list for PBXProject "UE4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8ECEEA9EC2004E8ED775D5ED;
-			productRefGroup = C39DBEF837505267F32005E7 /* Products */;
+			mainGroup = 62147C9A139B0CC310311762;
+			productRefGroup = 4D492ACE78BDC7E1AE5D618A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F065836E73C8A2F3415E76E1 /* UE4XcodeHelper */,
-				A5628470F317DFBC0AC94CF2 /* UE4CmdLineRun */,
-				6857F8EAE30E1EA7348C407F /* RTS - Mac */,
-				6B676F2A98C0EE04EF057E70 /* RTS - iOS */,
-				C9593CE068915DC38157E739 /* RTSEditor - Mac */,
+				E21DA3825FF65243B4288416 /* UE4XcodeHelper */,
+				5A273BE58904752506AD7474 /* UE4CmdLineRun */,
+				6C5905C5B1D5F1E6EBB9395F /* RTS - Mac */,
+				D3F7EB5710545DE17AF0B5C9 /* RTS - iOS */,
+				29FC17BCBC00AB4007D219E1 /* RTSEditor - Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		56F3EA26B079EBBD04D58035 /* DebugGame */ = {
+		13ACA80B3B6D4F7F8DAE3AEA /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -614,7 +621,7 @@
 			};
 			name = DebugGame;
 		};
-		8CA5EF6672C374DB7D05FB2D /* Development */ = {
+		F065836E73C8A2F3415E76E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -883,7 +890,7 @@
 			};
 			name = Development;
 		};
-		946A116CFB87339CF0E95285 /* Shipping */ = {
+		6C80F057548241D7663CECC5 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1152,7 +1159,7 @@
 			};
 			name = Shipping;
 		};
-		7A3B692D8EC585BB3FD0F8FD /* DebugGame */ = {
+		0C2D366B707949B120CA6EBD /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1198,7 +1205,7 @@
 			};
 			name = DebugGame;
 		};
-		6029578830DA638243DE8E0B /* Development */ = {
+		29A0CBF10248C211A6964760 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1244,7 +1251,7 @@
 			};
 			name = Development;
 		};
-		85596FB6CE91F8C3DCE657E0 /* Shipping */ = {
+		6028181650C886C91A9FBED0 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1290,7 +1297,7 @@
 			};
 			name = Shipping;
 		};
-		DA2F44CA29214A2137DCF1B8 /* DebugGame */ = {
+		827F628BDE26193DCAF04501 /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1311,7 +1318,7 @@
 			};
 			name = DebugGame;
 		};
-		C12804AC350EC6F717FBAA24 /* Development */ = {
+		8EDC84F240C130AC4F53FC41 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1332,7 +1339,7 @@
 			};
 			name = Development;
 		};
-		BE9C3077E1F943F41CD9821F /* Shipping */ = {
+		3397B24CD189DA9D64548528 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1353,7 +1360,7 @@
 			};
 			name = Shipping;
 		};
-		4CD3C1AEC16D37E04EBBD2C6 /* DebugGame */ = {
+		A58817B4BFE3EC885169C687 /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"PRODUCT_NAME[sdk=iphoneos*]" = "RTS";
@@ -1380,7 +1387,7 @@
 			};
 			name = DebugGame;
 		};
-		8205A358E2152CFE8E29FF95 /* Development */ = {
+		A642C9A4EACF852E707BE498 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"PRODUCT_NAME[sdk=iphoneos*]" = "RTS";
@@ -1407,7 +1414,7 @@
 			};
 			name = Development;
 		};
-		A4D012BA00E942CE3E13ED28 /* Shipping */ = {
+		C9593CE068915DC38157E739 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"PRODUCT_NAME[sdk=iphoneos*]" = "RTS";
@@ -1434,7 +1441,7 @@
 			};
 			name = Shipping;
 		};
-		F196C5FC16156EAB49EAFE0A /* DebugGame */ = {
+		ED6930AA51E76419FB1077F1 /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1447,7 +1454,7 @@
 			};
 			name = DebugGame;
 		};
-		C07DCF5AAAB848C47CD221DD /* Development */ = {
+		21D9D0723294109053C165D6 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1460,7 +1467,7 @@
 			};
 			name = Development;
 		};
-		83E49F832E856FD17DB68599 /* Shipping */ = {
+		C6B2FF7FBB0C6ED89AB58424 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1473,7 +1480,7 @@
 			};
 			name = Shipping;
 		};
-		D30D71E001591145B07C34E6 /* DebugGame */ = {
+		6689F3FDD131EFF7580CDBF7 /* DebugGame */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1494,7 +1501,7 @@
 			};
 			name = DebugGame;
 		};
-		CD2B4BAAD044778F03B18500 /* Development */ = {
+		A5628470F317DFBC0AC94CF2 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1515,7 +1522,7 @@
 			};
 			name = Development;
 		};
-		2165E139F0A34D8E3CE54651 /* Shipping */ = {
+		71691D23B02BEEDBB5650509 /* Shipping */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1539,62 +1546,62 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D19E2F2734BF246E70BD9BE /* Build configuration list for PBXProject "UE4" */ = {
+		D9C0999C542D97A8C7B043A0 /* Build configuration list for PBXProject "UE4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56F3EA26B079EBBD04D58035 /* DebugGame */,
-				8CA5EF6672C374DB7D05FB2D /* Development */,
-				946A116CFB87339CF0E95285 /* Shipping */,
+				13ACA80B3B6D4F7F8DAE3AEA /* DebugGame */,
+				F065836E73C8A2F3415E76E1 /* Development */,
+				6C80F057548241D7663CECC5 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		71691D23B02BEEDBB5650509 /* Build configuration list for PBXNativeTarget "UE4CmdLineRun" */ = {
+		B055C80CF81A0379101047B9 /* Build configuration list for PBXNativeTarget "UE4CmdLineRun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A3B692D8EC585BB3FD0F8FD /* DebugGame */,
-				6029578830DA638243DE8E0B /* Development */,
-				85596FB6CE91F8C3DCE657E0 /* Shipping */,
+				0C2D366B707949B120CA6EBD /* DebugGame */,
+				29A0CBF10248C211A6964760 /* Development */,
+				6028181650C886C91A9FBED0 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		0C2D366B707949B120CA6EBD /* Build configuration list for PBXLegacyTarget "RTS - Mac" */ = {
+		D38ACCF96672675D26E8C3DD /* Build configuration list for PBXLegacyTarget "RTS - Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA2F44CA29214A2137DCF1B8 /* DebugGame */,
-				C12804AC350EC6F717FBAA24 /* Development */,
-				BE9C3077E1F943F41CD9821F /* Shipping */,
+				827F628BDE26193DCAF04501 /* DebugGame */,
+				8EDC84F240C130AC4F53FC41 /* Development */,
+				3397B24CD189DA9D64548528 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		827F628BDE26193DCAF04501 /* Build configuration list for PBXNativeTarget "RTS - iOS" */ = {
+		813DBB2C8FA8488CB2A0850E /* Build configuration list for PBXNativeTarget "RTS - iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CD3C1AEC16D37E04EBBD2C6 /* DebugGame */,
-				8205A358E2152CFE8E29FF95 /* Development */,
-				A4D012BA00E942CE3E13ED28 /* Shipping */,
+				A58817B4BFE3EC885169C687 /* DebugGame */,
+				A642C9A4EACF852E707BE498 /* Development */,
+				C9593CE068915DC38157E739 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		43FF059A291EA3F7D26D7626 /* Build configuration list for PBXLegacyTarget "RTSEditor - Mac" */ = {
+		6625E8CDC53215948FA96C65 /* Build configuration list for PBXLegacyTarget "RTSEditor - Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F196C5FC16156EAB49EAFE0A /* DebugGame */,
-				C07DCF5AAAB848C47CD221DD /* Development */,
-				83E49F832E856FD17DB68599 /* Shipping */,
+				ED6930AA51E76419FB1077F1 /* DebugGame */,
+				21D9D0723294109053C165D6 /* Development */,
+				C6B2FF7FBB0C6ED89AB58424 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		6C80F057548241D7663CECC5 /* Build configuration list for PBXNativeTarget "UE4XcodeHelper" */ = {
+		B5F64B35230992EDF2421C69 /* Build configuration list for PBXNativeTarget "UE4XcodeHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D30D71E001591145B07C34E6 /* DebugGame */,
-				CD2B4BAAD044778F03B18500 /* Development */,
-				2165E139F0A34D8E3CE54651 /* Shipping */,
+				6689F3FDD131EFF7580CDBF7 /* DebugGame */,
+				A5628470F317DFBC0AC94CF2 /* Development */,
+				71691D23B02BEEDBB5650509 /* Shipping */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -1602,5 +1609,5 @@
 /* End XCConfigurationList section */
 
 	};
-	rootObject = 27AFC5D77CBF58FB29C42D1E /* Project object */;
+	rootObject = D711B1FC4DEE60CF3FB6188C /* Project object */;
 }

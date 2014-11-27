@@ -13,7 +13,7 @@ class RTS_API ARTSPlayerController : public APlayerController
 {
 	GENERATED_UCLASS_BODY()
     
-    void SetupInputComponent() override;
+    void SetupInputComponent();
     void PrintShit();
 };
 

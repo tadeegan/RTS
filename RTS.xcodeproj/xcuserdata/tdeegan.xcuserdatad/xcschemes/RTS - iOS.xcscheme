@@ -14,7 +14,7 @@
            buildForAnalyzing = "YES">
            <BuildableReference
               BuildableIdentifier = "primary"
-              BlueprintIdentifier = "6B676F2A98C0EE04EF057E70"
+              BlueprintIdentifier = "D3F7EB5710545DE17AF0B5C9"
               BuildableName = "RTS.app"
               BlueprintName = "RTS - iOS"
               ReferencedContainer = "container:RTS.xcodeproj">
@@ -32,7 +32,7 @@
            skipped = "NO">
            <BuildableReference
               BuildableIdentifier = "primary"
-              BlueprintIdentifier = "A5628470F317DFBC0AC94CF2"
+              BlueprintIdentifier = "5A273BE58904752506AD7474"
               BuildableName = "UE4CmdLineRun.xctest"
               BlueprintName = "UE4CmdLineRun"
               ReferencedContainer = "container:RTS.xcodeproj">
@@ -42,7 +42,7 @@
      <MacroExpansion>
         <BuildableReference
            BuildableIdentifier = "primary"
-           BlueprintIdentifier = "6B676F2A98C0EE04EF057E70"
+           BlueprintIdentifier = "D3F7EB5710545DE17AF0B5C9"
            BuildableName = "RTS.app"
            BlueprintName = "RTS - iOS"
            ReferencedContainer = "container:RTS.xcodeproj">
@@ -61,7 +61,7 @@
      <BuildableProductRunnable>
         <BuildableReference
            BuildableIdentifier = "primary"
-           BlueprintIdentifier = "6B676F2A98C0EE04EF057E70"
+           BlueprintIdentifier = "D3F7EB5710545DE17AF0B5C9"
            BuildableName = "RTS.app"
            BlueprintName = "RTS - iOS"
            ReferencedContainer = "container:RTS.xcodeproj">
@@ -92,7 +92,7 @@
      <BuildableProductRunnable>
          <BuildableReference
              BuildableIdentifier = "primary"
-	          BlueprintIdentifier = "6B676F2A98C0EE04EF057E70"
+	          BlueprintIdentifier = "D3F7EB5710545DE17AF0B5C9"
              BuildableName = "RTS.app"
              BlueprintName = "RTS"
              ReferencedContainer = "container:UE4.xcodeproj">
