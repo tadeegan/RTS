@@ -6,7 +6,7 @@
 
 ABuilding::ABuilding(const class FPostConstructInitializeProperties& PCIP) : Super(PCIP)
 {
-
+    
 }
 
 
